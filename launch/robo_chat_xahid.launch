@@ -1,0 +1,8 @@
+<launch>
+
+    <node pkg="robo_chat_gest" type="robo_chat_go.py" output="screen" name="gesture_recognizer">
+        <param name="camera_topic" value="/loco_cams/left/image_raw"/>
+        <rosparam command="load" file="$(find robo_chat_gest)/data/robo_chat_gest_params.yaml" />
+    </node>
+
+</launch>
